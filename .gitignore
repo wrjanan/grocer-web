@@ -2,8 +2,13 @@
 
 # dependencies
 /node_modules
+/src
+/public
+package.json
+tsconfig.json
 /.pnp
 .pnp.js
+.eslintcache
 
 # testing
 /coverage
