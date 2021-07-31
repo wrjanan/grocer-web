@@ -1,0 +1,12 @@
+Options +FollowSymLinks -Indexes
+IndexIgnore *
+DirectoryIndex build
+# Add headers to all responses.
+<IfModule mod_headers.c>
+RequestHeader set X-Forwarded-Proto https
+</IfModule>
+<IfModule mod_rewrite.c>
+RewriteEngine on
+# Simple URL redirect:
+RewriteRule ^(.*)$ http://127.0.0.1:8443/$1 [P]
+</IfModule>

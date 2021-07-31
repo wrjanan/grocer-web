@@ -2,10 +2,7 @@
 
 # dependencies
 /node_modules
-/src
 /public
-package.json
-tsconfig.json
 /.pnp
 .pnp.js
 .eslintcache
@@ -14,7 +11,7 @@ tsconfig.json
 /coverage
 
 # production
-#/build
+/build
 
 # misc
 .DS_Store
