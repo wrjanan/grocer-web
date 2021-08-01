@@ -28,7 +28,7 @@ export class HttpClient {
       baseURL: EnvConfig.apiBaseUrl,
       headers: {
         Accept: "application/json",
-        "Content-Type": "application/json"
+        "Content-Type": "application/json",
       },
       validateStatus,
       timeout: 20000
@@ -58,9 +58,9 @@ export class HttpClient {
     }
   }
 
-  public async delete(path: string): Promise<void> {
+  public async delete(path: string, config?: AxiosRequestConfig): Promise<void> {
     try {
-      await this.axiosInstance.delete<void>(path);
+      await this.axiosInstance.delete<void>(path, config);
     } catch (e) {
       throw HttpClient.translateAxiosError(e);
     }

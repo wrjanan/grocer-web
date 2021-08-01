@@ -3,13 +3,13 @@ import React from 'react';
 export class Item {
     name: string;
     description: string;
-    quantity: string;
+    quantity: number;
     imageSrc: string;
 
     constructor(
         name: string,
         description: string,
-        quantity: string,
+        quantity: number,
         imageSrc: string,
     ) {
         this.name = name;
@@ -31,7 +31,7 @@ export interface IItem {
     id: string,
     description: string;
     imageSrc: string;
-    quantity: string;
+    quantity: number;
     name: string;
     createdAt: string,
     updatedAt: string,

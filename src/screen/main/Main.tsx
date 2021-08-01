@@ -6,6 +6,8 @@ import ItemInfiniteList from '../../component/itemInfiniteList';
 import { Affix, Button, Col, Row } from 'antd';
 import MainCarousel from '../../component/mainCarousel';
 import { IItem } from '../../model/item';
+import { ItemTable } from '../../component/itemTable';
+import ItemModal from '../../component/itemModal';
 
 const contentStyle: CSSProperties = {
   height: '160px',
@@ -15,24 +17,21 @@ const contentStyle: CSSProperties = {
   background: '#364d79',
 };
 
-const Main: React.FC = () => {
+const Main2: React.FC = () => {
   const [ tags, setTags ] =  useState<number[]>([]);
   const [ items, setItems ] =  useState<IItem[]>([]);
+
+
 
   return (
     <ItemListProvider>
       <Row justify="center">
-        <Col span="24">
-          <MainCarousel></MainCarousel>
-        </Col>
-      </Row>
-      <Row justify="center">
         <Col span="14">
-          <ItemInfiniteList tagList={tags} itemList={items}></ItemInfiniteList>
+          <ItemTable itemList={items}></ItemTable>
         </Col>
       </Row>
     </ItemListProvider>
   );
 }
 
-export default Main;
+export default Main2;

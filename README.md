@@ -50,3 +50,10 @@ npx sequelize seed:generate
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+
+# Google OAuth
+
+OAuth package using npm module 
+more can be learnt here
+https://www.npmjs.com/package/react-google-login
